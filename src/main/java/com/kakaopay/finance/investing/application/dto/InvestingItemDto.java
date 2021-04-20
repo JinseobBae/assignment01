@@ -5,8 +5,7 @@ import lombok.*;
 import java.time.LocalDateTime;
 
 @lombok.Generated
-@Getter
-@Setter
+@Data
 @ToString
 @NoArgsConstructor
 public class InvestingItemDto {
