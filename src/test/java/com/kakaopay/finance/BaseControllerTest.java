@@ -43,6 +43,7 @@ public class BaseControllerTest {
     void setUp() {
         this.mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext)
                 .addFilters(new CharacterEncodingFilter("UTF-8",true)) //UTF-8 설정
+                .addFilters(new CharacterEncodingFilter("UTF-8",true)) //UTF-8 설정
                 .alwaysDo(print()) // 모든 mockMvc print() 수행
                 .build();
         this.objectMapper = new ObjectMapper().registerModule(new JavaTimeModule());
